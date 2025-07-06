@@ -1,126 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>TrendzyUAE Products</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 30px;
-    }
-    table {
-      width: 90%;
-      margin: 20px auto;
-      border-collapse: collapse;
-    }
-    th, td {
-      padding: 12px;
-      border: 1px solid #ccc;
-    }
-    th {
-      background-color: #f2f2f2;
-    }
-    input[type="text"] {
-      padding: 10px;
-      width: 250px;
-    }
-    button {
-      padding: 10px 15px;
-      background-color: #007bff;
-      color: white;
-      border: none;
-      cursor: pointer;
-      margin-left: 5px;
-    }
-    button:hover {
-      background-color: #0056b3;
-    }
-  </style>
-</head>
-<body>
+TrendzyUAE Products body { font-family: Arial, sans-serif; text-align: center; padding: 30px; } table { width: 90%; margin: 20px auto; border-collapse: collapse; } th, td { padding: 12px; border: 1px solid #ccc; } th { background-color: #f2f2f2; } input[type="text"] { padding: 10px; width: 250px; } button { padding: 10px 15px; background-color: #007bff; color: white; border: none; cursor: pointer; margin-left: 5px; } button:hover { background-color: #0056b3; } .product-card { border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px auto; width: 300px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); } .product-card img { max-width: 100%; border-radius: 8px; } .product-card h3 { margin: 10px 0 5px; } 🛍️ TrendzyUAE Product List 
 
-  <h1>🛍️🏷 TrendzyUAE Product List</h1>
-  <p>🔎 Search by product code</p>
-  <input type="text" id="productCodeInput" placeholder="Enter your product code...">
-  <button onclick="searchProduct()">Go</button>
+🔎 Search by product code
 
-  <br><br>
+Go 
 
-  <table>
-    <tr>
-      <th>Product Code</th>
-      <th>Product Name</th>
-      <th>Link</th>
-    </tr>
-    <tr>
-      <td>TR001</td>
-      <td>Self-Stirring Mug - BIGTHREE</td>
-      <td><a href="bigthree-mug.html">Open</a></td>
-    </tr>
-    <tr>
-      <td>TR002</td>
-      <td>HY300 Portable Projector</td>
-      <td><a href="#">Coming Soon</a></td>
-    </tr>
-    <tr>
-      <td>TR003</td>
-      <td>3-in-1 Cooling Fan with Light</td>
-      <td><a href="#">Coming Soon</a></td>
-    </tr>
-  </table>
 
-  <hr style="margin: 50px 0;">
 
-  <h2>📋 قائمة المنتجات</h2>
-  <p>🔎 ابحث باستخدام كود المنتج</p>
-  <input type="text" id="productCodeInputAr" placeholder="ادخل كود المنتج...">
-  <button onclick="searchProductAr()">اذهب</button>
+Product Code Product Name Link TR001 Self-Stirring Mug - BIGTHREE Open TR002 HY300 Portable Projector Coming Soon TR003 3-in-1 Cooling Fan with Light Coming Soon 
 
-  <br><br>
+TR001 - Self-Stirring Mug - BIGTHREE 
 
-  <table>
-    <tr>
-      <th>رمز المنتج</th>
-      <th>اسم المنتج</th>
-      <th>الرابط</th>
-    </tr>
-    <tr>
-      <td>TR001</td>
-      <td>كوب تحريك ذاتي - BIGTHREE</td>
-      <td><a href="bigthree-mug.html">افتح</a></td>
-    </tr>
-    <tr>
-      <td>TR002</td>
-      <td>بروجيكتور محمول HY300</td>
-      <td><a href="#">قريباً</a></td>
-    </tr>
-    <tr>
-      <td>TR003</td>
-      <td>مروحة 3 في 1 مع ضوء</td>
-      <td><a href="#">قريباً</a></td>
-    </tr>
-  </table>
+🔗 View Product Page
 
-  <script>
-    function searchProduct() {
-      const code = document.getElementById("productCodeInput").value.trim().toUpperCase();
-      if (code === "TR001") {
-        window.location.href = "bigthree-mug.html";
-      } else {
-        alert("Product not found or not available yet.");
-      }
-    }
+📋 قائمة المنتجات 
 
-    function searchProductAr() {
-      const code = document.getElementById("productCodeInputAr").value.trim().toUpperCase();
-      if (code === "TR001") {
-        window.location.href = "bigthree-mug.html";
-      } else {
-        alert("المنتج غير موجود أو لم يتم إضافته بعد.");
-      }
-    }
-  </script>
+🔎 ابحث باستخدام كود المنتج
 
-</body>
-</html>
+اذهب 
+
+
+
+رمز المنتج اسم المنتج الرابط TR001 كوب تحريك ذاتي - BIGTHREE افتح TR002 بروجيكتور محمول HY300 قريباً TR003 مروحة 3 في 1 مع ضوء قريباً function searchProduct() { const code = document.getElementById("productCodeInput").value.trim().toUpperCase(); if (code === "TR001") { window.location.href = "bigthree-mug.html"; } else { alert("Product not found or not available yet."); } } function searchProductAr() { const code = document.getElementById("productCodeInputAr").value.trim().toUpperCase(); if (code === "TR001") { window.location.href = "bigthree-mug.html"; } else { alert("المنتج غير موجود أو لم يتم إضافته بعد."); } } 
