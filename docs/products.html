@@ -6,65 +6,89 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f9f9f9; /* رنگ روشن نرم */
-      margin: 0;
-      padding: 30px;
-    }
-
-    h1 {
+      background: linear-gradient(135deg, #d4fc79 0%, #96e6a1 100%);
       text-align: center;
-      color: #007bff;
+      padding: 40px;
     }
-
-    .product-list {
-      max-width: 600px;
-      margin: 30px auto;
+    input[type="text"] {
+      padding: 15px;
+      width: 300px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+    button {
+      padding: 15px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      margin-left: 10px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    .product-box {
+      background: white;
+      border-radius: 12px;
       padding: 20px;
-      background-color: white;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      margin: 30px auto;
+      width: 90%;
+      max-width: 500px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
-
-    .product-item {
-      border-bottom: 1px solid #ddd;
-      padding: 15px 0;
-    }
-
-    .product-item:last-child {
-      border-bottom: none;
-    }
-
     .product-code {
+      color: red;
       font-weight: bold;
-      color: #555;
+      margin-top: 10px;
     }
-
     .product-name {
+      font-size: 22px;
       color: #333;
-      font-size: 18px;
+      margin-top: 5px;
+    }
+    .product-link a {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #28a745;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .product-link a:hover {
+      background-color: #218838;
     }
   </style>
 </head>
 <body>
 
-  <h1>📋 TrendzyUAE Product List</h1>
+  <h1>🛍️ Explore TrendzyUAE Products</h1>
+  <p>🔎 Search by product code</p>
+  <input type="text" id="productCodeInput" placeholder="Enter code like TR001...">
+  <button onclick="searchProduct()">Search</button>
 
-  <div class="product-list">
-    <div class="product-item">
-      <div class="product-code">Code: TR001</div>
-      <div class="product-name">BIGTHREE Self Stirring Mug</div>
-    </div>
-
-    <div class="product-item">
-      <div class="product-code">Code: TR002</div>
-      <div class="product-name">2-in-1 Mini Wireless Vacuum Cleaner</div>
-    </div>
-
-    <div class="product-item">
-      <div class="product-code">Code: TR003</div>
-      <div class="product-name">Portable USB Juice Blender</div>
-    </div>
+  <!-- Sample Product -->
+  <div class="product-box">
+    <img src="assets/file_000000003978620a8b7ef94d1e51f3e0.png" alt="Product Image" style="max-width: 100%; border-radius: 10px;">
+    <div class="product-code">Code: TR001</div>
+    <div class="product-name">BIGTHREE Self Stirring Mug</div>
+    <div class="product-link"><a href="bigthree-mug.html">🔗 View Product</a></div>
   </div>
+
+  <script>
+    function searchProduct() {
+      const code = document.getElementById("productCodeInput").value.trim().toUpperCase();
+      if (code === "TR001") {
+        window.location.href = "bigthree-mug.html";
+      } else {
+        alert("Product not found or not added yet.");
+      }
+    }
+  </script>
 
 </body>
 </html>
