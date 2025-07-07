@@ -6,40 +6,32 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #e6f2ff;
-      margin: 0;
-      padding: 20px;
       text-align: center;
-    }
-    h1 {
-      color: #0056b3;
+      padding: 30px;
+      background-color: #e6f2ff;
     }
     input[type="text"] {
-      padding: 12px;
-      width: 300px;
-      font-size: 16px;
+      padding: 10px;
+      width: 250px;
     }
     button {
-      padding: 12px 18px;
+      padding: 10px 15px;
       background-color: #007bff;
       color: white;
       border: none;
       cursor: pointer;
-      font-size: 16px;
-      border-radius: 5px;
+      margin-left: 5px;
     }
     button:hover {
       background-color: #0056b3;
     }
     .product-box {
-      background-color: white;
-      border: 1px solid #ccc;
-      border-radius: 12px;
-      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 15px;
       margin: 30px auto;
-      width: 90%;
       max-width: 400px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      background-color: white;
     }
     .product-box img {
       width: 100%;
@@ -48,9 +40,8 @@
     }
     .product-code {
       font-weight: bold;
-      color: red;
-      font-size: 18px;
       margin-top: 10px;
+      color: red;
     }
     .product-name {
       font-size: 20px;
@@ -59,45 +50,44 @@
     }
     .product-link a {
       display: inline-block;
-      margin-top: 12px;
-      padding: 10px 18px;
+      margin-top: 10px;
+      padding: 10px 15px;
       background-color: #28a745;
       color: white;
-      border-radius: 6px;
+      border-radius: 5px;
       text-decoration: none;
-      font-size: 16px;
     }
     .product-link a:hover {
-      background-color: #1e7e34;
+      background-color: #218838;
     }
   </style>
 </head>
 <body>
 
-  <h1>🛍️ Our Trending Products</h1>
-
-  <input type="text" id="productCodeInput" placeholder="Enter product code...">
+  <h1>🛍️ TrendzyUAE Product Page</h1>
+  <p>🔎 Search by product code</p>
+  <input type="text" id="productCodeInput" placeholder="Enter your product code...">
   <button onclick="searchProduct()">Search</button>
 
   <div class="product-box">
-    <img src="https://i.ibb.co/v4X82k2W/file-000000003978620a8b7ef94d1e51f3e0.png" alt="Self Stirring Mug">alt="Self Stirring Mug">
+    <img src="https://i.ibb.co/4R1xBpB/file-000000003978620a8b7ef94d1e51f3e0.png" alt="Self Stirring Mug">
     <div class="product-code">Code: TR001</div>
-    <div class="product-name">BIGTHREE Self-Stirring Mug</div>
-    <div class="product-link"><a href="bigthree-mug.html" target="_blank">View Product</a></div>
+    <div class="product-name">BIGTHREE Self Stirring Mug</div>
+    <div class="product-link"><a href="bigthree-mug.html">🔗 View Product</a></div>
   </div>
 
   <div class="product-box">
-    <img src="assets/hy300.png" alt="HY300 Projector">
+    <img src="https://i.ibb.co/ZpmHBMx/hy300.png" alt="HY300 Projector">
     <div class="product-code">Code: TR002</div>
-    <div class="product-name">HY300 Portable Mini Projector</div>
-    <div class="product-link"><a href="hy300-projector.html" target="_blank">View Product</a></div>
+    <div class="product-name">HY300 Mini Projector 📽️</div>
+    <div class="product-link"><a href="hy300-projector.html">🔗 View Product</a></div>
   </div>
 
   <div class="product-box">
-    <img src="assets/fan3in1.png" alt="3-in-1 Cooling Fan">
+    <img src="https://i.ibb.co/PsmBSGt/fan3in1.png" alt="3-in-1 Cooling Fan">
     <div class="product-code">Code: TR003</div>
-    <div class="product-name">3-in-1 Cooling Fan with Light & Mist</div>
-    <div class="product-link"><a href="cooling-fan-3in1.html" target="_blank">View Product</a></div>
+    <div class="product-name">3-in-1 Portable Cooling Fan 🌬️💡❄️</div>
+    <div class="product-link"><a href="3in1-fan.html">🔗 View Product</a></div>
   </div>
 
   <script>
@@ -108,9 +98,9 @@
       } else if (code === "TR002") {
         window.location.href = "hy300-projector.html";
       } else if (code === "TR003") {
-        window.location.href = "cooling-fan-3in1.html";
+        window.location.href = "3in1-fan.html";
       } else {
-        alert("Product not found.");
+        alert("Product not found or not available yet.");
       }
     }
   </script>
