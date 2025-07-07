@@ -6,79 +6,44 @@
   <style>
     body {
       font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+      color: #333;
       text-align: center;
-      padding: 30px;
+      padding: 50px;
     }
-    input[type="text"] {
-      padding: 10px;
-      width: 250px;
-      margin-top: 10px;
+    h1, h2 {
+      margin-bottom: 10px;
     }
-    button {
-      padding: 10px 15px;
+    .button {
+      margin-top: 30px;
       background-color: #007bff;
       color: white;
+      padding: 15px 30px;
+      font-size: 18px;
       border: none;
-      cursor: pointer;
-      margin-left: 5px;
+      border-radius: 8px;
+      text-decoration: none;
+      display: inline-block;
     }
-    button:hover {
+    .button:hover {
       background-color: #0056b3;
-    }
-    hr {
-      margin: 50px 0;
     }
   </style>
 </head>
 <body>
 
-  <!-- English Section -->
-  <h1>✨ Welcome to <span style="color:#007bff">TrendzyUAE</span></h1>
-  <p>🛍️ Discover the most <strong>viral</strong> products!</p>
-  <p>✅ 100% Real products – trusted, reviewed, and tested</p>
-  <p>📦 Buy directly from <strong>Amazon.ae</strong></p>
-  <p>📲 Follow us on Instagram for daily trends</p>
-  <p>📧 Questions? DM us on Instagram anytime</p>
+  <!-- English Welcome -->
+  <h1>🌟 Welcome to <span style="color:#007bff;">TrendzyUAE</span> 🌟</h1>
+  <p>🛍️ Discover top trending Amazon UAE products!</p>
 
-  <br>
-  <a href="products.html" style="background-color:#007BFF; color:white; padding:10px 20px; border-radius:5px; display:inline-block; text-decoration:none;">📦 View Products</a>
+  <hr style="margin: 40px 0;">
 
-  <hr>
+  <!-- Arabic Welcome -->
+  <h2>🌟 مرحباً بكم في <span style="color:#007bff;">TrendzyUAE</span> 🌟</h2>
+  <p>🛍️ اكتشفوا المنتجات الأكثر رواجاً من أمازون الإمارات</p>
 
-  <!-- Arabic Section -->
-  <h2>✨ مرحباً بكم في <span style="color:#007bff">TrendzyUAE</span></h2>
-  <p>🛍️ اكتشف أشهر المنتجات وانتشاراً على أمازون الإمارات</p>
-  <p>✅ منتجات أصلية ومجربة وتقييمات واضحة</p>
-  <p>📦 اشترِ مباشرة من <strong>Amazon.ae</strong></p>
-  <p>📲 تابعونا على إنستغرام لمعرفة الترندات اليومية</p>
-  <p>📧 لأي استفسار، تواصل معنا على إنستغرام</p>
-
-  <br>
-  <a href="products.html" style="background-color:#007BFF; color:white; padding:10px 20px; border-radius:5px; display:inline-block; text-decoration:none;">📦 تصفح المنتجات</a>
-
-  <hr>
-
-  <!-- Product Search -->
-  <h3>🔍 Search by product code</h3>
-  <input type="text" id="productCodeInput" placeholder="Enter your product code...">
-  <button onclick="searchProduct()">Search</button>
-
-  <script>
-    function searchProduct() {
-      const code = document.getElementById("productCodeInput").value.trim().toUpperCase();
-      const links = {
-        "TR001": "bigthree-mug.html",
-        "TR002": "mini-projector.html",
-        "TR003": "cooler-fan.html"
-      };
-
-      if (links[code]) {
-        window.location.href = links[code];
-      } else {
-        alert("❌ Product not found or not available yet.");
-      }
-    }
-  </script>
+  <!-- Button -->
+  <a class="button" href="products.html">🔍 View Products | تصفّح المنتجات</a>
 
 </body>
 </html>
