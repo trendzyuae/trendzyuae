@@ -26,17 +26,12 @@
       background-color: #0056b3;
     }
     .product-box {
-      border: 1px solid #ddd;
+      border: 1px solid #ccc;
       border-radius: 10px;
-      padding: 15px;
-      margin: 30px auto;
+      padding: 20px;
+      margin: 20px auto;
       max-width: 400px;
-      background-color: white;
-    }
-    .product-box img {
-      width: 100%;
-      max-width: 300px;
-      border-radius: 10px;
+      background-color: #ffffff;
     }
     .product-code {
       font-weight: bold;
@@ -44,18 +39,18 @@
       color: red;
     }
     .product-name {
-      font-size: 20px;
+      font-size: 22px;
       margin-top: 5px;
       color: #333;
     }
     .product-link a {
       display: inline-block;
-      margin-top: 10px;
-      padding: 10px 15px;
+      margin-top: 15px;
+      padding: 10px 20px;
       background-color: #28a745;
       color: white;
-      border-radius: 5px;
       text-decoration: none;
+      border-radius: 5px;
     }
     .product-link a:hover {
       background-color: #218838;
@@ -64,30 +59,27 @@
 </head>
 <body>
 
-  <h1>🛍️ TrendzyUAE Product Page</h1>
-  <p>🔎 Search by product code</p>
-  <input type="text" id="productCodeInput" placeholder="Enter your product code...">
+  <h1>📦 TrendzyUAE Product List</h1>
+  <p>🔍 Enter the product code to open its page:</p>
+  <input type="text" id="productCodeInput" placeholder="e.g. TR001">
   <button onclick="searchProduct()">Search</button>
 
   <div class="product-box">
-    <img src="https://i.ibb.co/4R1xBpB/file-000000003978620a8b7ef94d1e51f3e0.png" alt="Self Stirring Mug">
     <div class="product-code">Code: TR001</div>
     <div class="product-name">BIGTHREE Self Stirring Mug</div>
     <div class="product-link"><a href="bigthree-mug.html">🔗 View Product</a></div>
   </div>
 
   <div class="product-box">
-    <img src="https://i.ibb.co/ZpmHBMx/hy300.png" alt="HY300 Projector">
     <div class="product-code">Code: TR002</div>
-    <div class="product-name">HY300 Mini Projector 📽️</div>
+    <div class="product-name">HY300 Mini Projector</div>
     <div class="product-link"><a href="hy300-projector.html">🔗 View Product</a></div>
   </div>
 
   <div class="product-box">
-    <img src="https://i.ibb.co/PsmBSGt/fan3in1.png" alt="3-in-1 Cooling Fan">
     <div class="product-code">Code: TR003</div>
-    <div class="product-name">3-in-1 Portable Cooling Fan 🌬️💡❄️</div>
-    <div class="product-link"><a href="3in1-fan.html">🔗 View Product</a></div>
+    <div class="product-name">Portable 3-in-1 Air Cooler Fan</div>
+    <div class="product-link"><a href="3in1-cooler.html">🔗 View Product</a></div>
   </div>
 
   <script>
@@ -98,7 +90,7 @@
       } else if (code === "TR002") {
         window.location.href = "hy300-projector.html";
       } else if (code === "TR003") {
-        window.location.href = "3in1-fan.html";
+        window.location.href = "3in1-cooler.html";
       } else {
         alert("Product not found or not available yet.");
       }
