@@ -1,94 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>TrendzyUAE Products</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Products - TrendzyUAE</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #d4fc79 0%, #96e6a1 100%);
-      text-align: center;
-      padding: 40px;
-    }
-    input[type="text"] {
-      padding: 15px;
-      width: 300px;
-      font-size: 16px;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-    }
-    button {
-      padding: 15px 20px;
-      background-color: #007bff;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      margin-left: 10px;
-      cursor: pointer;
-      font-size: 16px;
-    }
-    button:hover {
-      background-color: #0056b3;
-    }
-    .product-box {
-      background: white;
-      border-radius: 12px;
+      margin: 0;
       padding: 20px;
-      margin: 30px auto;
-      width: 90%;
-      max-width: 500px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      background-color: #d0ebff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #003366;
     }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 30px;
+    }
+
+    .search-box {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+
+    .search-box input {
+      width: 60%;
+      padding: 15px;
+      font-size: 1.2em;
+      border: 2px solid #007BFF;
+      border-radius: 10px;
+      outline: none;
+    }
+
+    .product-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .product-card {
+      background-color: white;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      font-size: 1.2em;
+    }
+
     .product-code {
       color: red;
       font-weight: bold;
-      margin-top: 10px;
-    }
-    .product-name {
-      font-size: 22px;
-      color: #333;
-      margin-top: 5px;
-    }
-    .product-link a {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 10px 20px;
-      background-color: #28a745;
-      color: white;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .product-link a:hover {
-      background-color: #218838;
     }
   </style>
 </head>
 <body>
 
-  <h1>🛍️ Explore TrendzyUAE Products</h1>
-  <p>🔎 Search by product code</p>
-  <input type="text" id="productCodeInput" placeholder="Enter code like TR001...">
-  <button onclick="searchProduct()">Search</button>
+  <h1>🛍️ Explore Our Products | تصفح منتجاتنا</h1>
 
-  <!-- Sample Product -->
-  <div class="product-box">
-    <img src="assets/file_000000003978620a8b7ef94d1e51f3e0.png" alt="Product Image" style="max-width: 100%; border-radius: 10px;">
-    <div class="product-code">Code: TR001</div>
-    <div class="product-name">BIGTHREE Self Stirring Mug</div>
-    <div class="product-link"><a href="bigthree-mug.html">🔗 View Product</a></div>
+  <div class="search-box">
+    <input type="text" placeholder="🔍 Search for a product... | ابحث عن منتج">
   </div>
 
-  <script>
-    function searchProduct() {
-      const code = document.getElementById("productCodeInput").value.trim().toUpperCase();
-      if (code === "TR001") {
-        window.location.href = "bigthree-mug.html";
-      } else {
-        alert("Product not found or not added yet.");
-      }
-    }
-  </script>
+  <div class="product-list">
+    <div class="product-card">
+      <p><span class="product-code">Code: P001</span> - Trendy Mug with BigThree Design</p>
+    </div>
+    <div class="product-card">
+      <p><span class="product-code">Code: P002</span> - Stylish Phone Stand for Desk</p>
+    </div>
+    <div class="product-card">
+      <p><span class="product-code">Code: P003</span> - Wireless LED Makeup Mirror</p>
+    </div>
+    <!-- محصول‌های بیشتر هم می‌تونی اضافه کنی -->
+  </div>
 
 </body>
 </html>
