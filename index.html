@@ -3,38 +3,82 @@
 <head>
   <meta charset="UTF-8">
   <title>TrendzyUAE</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 30px;
+    }
+    input[type="text"] {
+      padding: 10px;
+      width: 250px;
+      margin-top: 10px;
+    }
+    button {
+      padding: 10px 15px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-left: 5px;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    hr {
+      margin: 50px 0;
+    }
+  </style>
 </head>
-<body style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; line-height: 1.6;">
+<body>
 
   <!-- English Section -->
-  <h1>✨ Welcome  to <span style="color:#007BFF;">TrendzyUAE</span>!</h1>
-  <p>🛍 Discover the most <strong>viral and trending</strong> Amazon UAE products.</p>
-  <p>✅ 100% Real products – trusted, reviewed, and hot-selling!</p>
-  <p>📦 Buy directly from <strong>Amazon.ae</strong> through our affiliate links.</p>
-  <p>📲 Follow us on Instagram for daily trends and updates.</p>
-  <p>💬 Questions? DM us on Instagram anytime!</p>
+  <h1>✨ Welcome to <span style="color:#007bff">TrendzyUAE</span></h1>
+  <p>🛍️ Discover the most <strong>viral</strong> products!</p>
+  <p>✅ 100% Real products – trusted, reviewed, and tested</p>
+  <p>📦 Buy directly from <strong>Amazon.ae</strong></p>
+  <p>📲 Follow us on Instagram for daily trends</p>
+  <p>📧 Questions? DM us on Instagram anytime</p>
 
   <br>
-  <a href="https://trendzyuae.github.io/trendzyuae/products.html"
-     style="background-color:#007BFF; color:white; padding:12px 24px; border-radius:8px; text-decoration:none; font-weight:bold;">
-     📦 View Products
-  </a>
+  <a href="products.html" style="background-color:#007BFF; color:white; padding:10px 20px; border-radius:5px; display:inline-block; text-decoration:none;">📦 View Products</a>
 
-  <hr style="margin: 50px 0;">
+  <hr>
 
   <!-- Arabic Section -->
-  <h2>✨ مرحباً بكم في <span style="color:#007BFF;">TrendzyUAE</span>!</h2>
-  <p>🛍 اكتشف المنتجات الأكثر شهرة وانتشاراً على أمازون الإمارات</p>
-  <p>✅ منتجات أصلية ومضمونة ومراجعة بأسعار رائعة</p>
-  <p>📦 اشترِ مباشرة من <strong>Amazon.ae</strong> عبر روابطنا</p>
+  <h2>✨ مرحباً بكم في <span style="color:#007bff">TrendzyUAE</span></h2>
+  <p>🛍️ اكتشف أشهر المنتجات وانتشاراً على أمازون الإمارات</p>
+  <p>✅ منتجات أصلية ومجربة وتقييمات واضحة</p>
+  <p>📦 اشترِ مباشرة من <strong>Amazon.ae</strong></p>
   <p>📲 تابعونا على إنستغرام لمعرفة الترندات اليومية</p>
-  <p>📩 لأي استفسار، تواصل معنا على إنستغرام</p>
+  <p>📧 لأي استفسار، تواصل معنا على إنستغرام</p>
 
   <br>
-  <a href="https://trendzyuae.github.io/trendzyuae/products.html"
-     style="background-color:#007BFF; color:white; padding:12px 24px; border-radius:8px; text-decoration:none; font-weight:bold;">
-     📦 تصفّح المنتجات
-  </a>
+  <a href="products.html" style="background-color:#007BFF; color:white; padding:10px 20px; border-radius:5px; display:inline-block; text-decoration:none;">📦 تصفح المنتجات</a>
+
+  <hr>
+
+  <!-- Product Search -->
+  <h3>🔍 Search by product code</h3>
+  <input type="text" id="productCodeInput" placeholder="Enter your product code...">
+  <button onclick="searchProduct()">Search</button>
+
+  <script>
+    function searchProduct() {
+      const code = document.getElementById("productCodeInput").value.trim().toUpperCase();
+      const links = {
+        "TR001": "bigthree-mug.html",
+        "TR002": "mini-projector.html",
+        "TR003": "cooler-fan.html"
+      };
+
+      if (links[code]) {
+        window.location.href = links[code];
+      } else {
+        alert("❌ Product not found or not available yet.");
+      }
+    }
+  </script>
 
 </body>
 </html>
