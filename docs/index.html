@@ -1,49 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>TrendzyUAE</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome - TrendzyUAE</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
-      color: #333;
+      margin: 0;
+      padding: 0;
+      background-color: #d0ebff; /* آبی روشن */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #003366;
+    }
+
+    h1 {
+      font-size: 3em;
       text-align: center;
-      padding: 50px;
+      margin-bottom: 30px;
     }
-    h1, h2 {
-      margin-bottom: 10px;
-    }
-    .button {
-      margin-top: 30px;
-      background-color: #007bff;
+
+    a.button {
+      background-color: #007BFF;
       color: white;
       padding: 15px 30px;
-      font-size: 18px;
-      border: none;
-      border-radius: 8px;
       text-decoration: none;
-      display: inline-block;
+      font-size: 1.2em;
+      border-radius: 10px;
+      transition: background-color 0.3s ease;
     }
-    .button:hover {
+
+    a.button:hover {
       background-color: #0056b3;
     }
   </style>
 </head>
 <body>
-
-  <!-- English Welcome -->
-  <h1>🌟 Welcome to <span style="color:#007bff;">TrendzyUAE</span> 🌟</h1>
-  <p>🛍️ Discover top trending Amazon UAE products!</p>
-
-  <hr style="margin: 40px 0;">
-
-  <!-- Arabic Welcome -->
-  <h2>🌟 مرحباً بكم في <span style="color:#007bff;">TrendzyUAE</span> 🌟</h2>
-  <p>🛍️ اكتشفوا المنتجات الأكثر رواجاً من أمازون الإمارات</p>
-
-  <!-- Button -->
-  <a class="button" href="products.html">🔍 View Products | تصفّح المنتجات</a>
-
+  <h1>🌟 Welcome to TrendzyUAE 🌟</h1>
+  <a href="products.html" class="button">🔍 Explore Products</a>
 </body>
 </html>
